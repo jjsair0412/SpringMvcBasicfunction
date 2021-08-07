@@ -91,8 +91,8 @@ public class RequestBodyJsonController {
      * 객체 HTTP 메시지 컨버터 JSON 응답
      */
     @ResponseBody
-    @PostMapping("/request-body-json-v4")
-    public HelloData requestBodyJsonV4(@RequestBody HelloData data) {
+    @PostMapping("/request-body-json-v5")
+    public HelloData requestBodyJsonV5(@RequestBody HelloData data) {
         log.info("username={}, age={}", data.getUsername(), data.getAge());
         return data;
     }
