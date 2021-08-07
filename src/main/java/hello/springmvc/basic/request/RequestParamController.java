@@ -92,7 +92,7 @@ public class RequestParamController {
      * defaultValue값을 설정해주어서 아무런 값이 들어오지 않았을 경우
      * 넣을 값을 설정해 줄 수 있다.
      *
-     * 또한 빈문자가 들어올 경우에도 설정한 디폴트값이 들어간다.
+     * 또한 빈 문자가 들어올 경우에도 설정한 디폴트값이 들어간다.
      * null과 " "얘는 다르다.
      * */
     @ResponseBody
@@ -133,8 +133,6 @@ public class RequestParamController {
 
     /**
      * @ModelAttribute 어노테이션도 생략이 가능하다.
-     *
-     * 스프링에서는 String int, Integer같은 단순한 타입이라면
      */
     @ResponseBody
     @RequestMapping("/model-attribute-v2")
